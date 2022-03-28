@@ -22,4 +22,9 @@ public class PlusPlan extends Income {
     public double calculateTotal() {
         return totalAccounts * 35;
     }
+
+    @Override
+    public String toString() {
+        return "Tipo: " + this.getType() + "\n" + "Descrição: " + this.getDescription() + "\n" + "Data: " + this.getDate() + "\n" + "Total: " + this.calculateTotal();
+    }
 }

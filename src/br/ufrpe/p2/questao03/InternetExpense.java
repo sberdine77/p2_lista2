@@ -30,4 +30,9 @@ public class InternetExpense extends Expense {
             return 590.9 + ((traffickedData - 500) * 5.1);
         }
     }
+
+    @Override
+    public String toString() {
+        return "Tipo: " + this.getType() + "\n" + "Descrição: " + this.getDescription() + "\n" + "Data: " + this.getDate() + "\n" + "Total: " + this.calculateTotal();
+    }
 }

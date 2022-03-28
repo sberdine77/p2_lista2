@@ -36,4 +36,9 @@ public class EnergyExpense extends Expense {
 
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Tipo: " + this.getType() + "\n" + "Descrição: " + this.getDescription() + "\n" + "Data: " + this.getDate() + "\n" + "Total: " + this.calculateTotal();
+    }
 }

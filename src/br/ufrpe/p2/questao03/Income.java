@@ -38,4 +38,9 @@ public abstract class Income implements Transaction {
     public double calculateTotal() {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Tipo: " + this.getType() + "\n" + "Descrição: " + this.getDescription() + "\n" + "Data: " + this.getDate() + "\n" + "Total: " + this.calculateTotal();
+    }
 }

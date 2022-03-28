@@ -37,4 +37,9 @@ public class WaterExpense extends Expense {
 
         return track1 + track2 + track3;
     }
+
+    @Override
+    public String toString() {
+        return "Tipo: " + this.getType() + "\n" + "Descrição: " + this.getDescription() + "\n" + "Data: " + this.getDate() + "\n" + "Total: " + this.calculateTotal();
+    }
 }
