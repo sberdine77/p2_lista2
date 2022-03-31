@@ -19,10 +19,12 @@ public class GenericRepository {
         this.items = items;
     }
 
-    public void addItem(RepositoryItem item) {
+    public boolean addItem(RepositoryItem item) {
         if(!this.items.contains(item)) {
             this.items.add(item);
+            return true;
         }
+        return false;
     }
 
     public void removeItem(RepositoryItem item) {
